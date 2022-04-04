@@ -1,0 +1,14 @@
+C:\Users\awang1534\Documents\Hangman Project\Hangman Project\bin\Debug\Hangman Project.exe.config
+C:\Users\awang1534\Documents\Hangman Project\Hangman Project\bin\Debug\Hangman Project.exe
+C:\Users\awang1534\Documents\Hangman Project\Hangman Project\bin\Debug\Hangman Project.pdb
+C:\Users\awang1534\Documents\Hangman Project\Hangman Project\bin\Debug\Hangman Project.xml
+C:\Users\awang1534\Documents\Hangman Project\Hangman Project\obj\Debug\Hangman Project.vbproj.AssemblyReference.cache
+C:\Users\awang1534\Documents\Hangman Project\Hangman Project\obj\Debug\Hangman_Project.Form2.resources
+C:\Users\awang1534\Documents\Hangman Project\Hangman Project\obj\Debug\Hangman_Project.Form3.resources
+C:\Users\awang1534\Documents\Hangman Project\Hangman Project\obj\Debug\Hangman_Project.frmMain.resources
+C:\Users\awang1534\Documents\Hangman Project\Hangman Project\obj\Debug\Hangman_Project.Resources.resources
+C:\Users\awang1534\Documents\Hangman Project\Hangman Project\obj\Debug\Hangman Project.vbproj.GenerateResource.cache
+C:\Users\awang1534\Documents\Hangman Project\Hangman Project\obj\Debug\Hangman Project.vbproj.CoreCompileInputs.cache
+C:\Users\awang1534\Documents\Hangman Project\Hangman Project\obj\Debug\Hangman Project.exe
+C:\Users\awang1534\Documents\Hangman Project\Hangman Project\obj\Debug\Hangman Project.xml
+C:\Users\awang1534\Documents\Hangman Project\Hangman Project\obj\Debug\Hangman Project.pdb

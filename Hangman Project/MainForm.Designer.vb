@@ -42,7 +42,7 @@ Partial Class frmMain
         Me.btnK = New System.Windows.Forms.Button()
         Me.btnL = New System.Windows.Forms.Button()
         Me.btnZ = New System.Windows.Forms.Button()
-        Me.X = New System.Windows.Forms.Button()
+        Me.btnX = New System.Windows.Forms.Button()
         Me.btnC = New System.Windows.Forms.Button()
         Me.btnV = New System.Windows.Forms.Button()
         Me.btnB = New System.Windows.Forms.Button()
@@ -58,6 +58,7 @@ Partial Class frmMain
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.lblPlayer1Point = New System.Windows.Forms.Label()
         Me.lblPlayer2Point = New System.Windows.Forms.Label()
+        Me.btnExit = New System.Windows.Forms.Button()
         CType(Me.picLLeft, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picRLeg, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picLeft, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -247,14 +248,14 @@ Partial Class frmMain
         Me.btnZ.Text = "Z"
         Me.btnZ.UseVisualStyleBackColor = True
         '
-        'X
+        'btnX
         '
-        Me.X.Location = New System.Drawing.Point(530, 121)
-        Me.X.Name = "X"
-        Me.X.Size = New System.Drawing.Size(27, 28)
-        Me.X.TabIndex = 20
-        Me.X.Text = "X"
-        Me.X.UseVisualStyleBackColor = True
+        Me.btnX.Location = New System.Drawing.Point(530, 121)
+        Me.btnX.Name = "btnX"
+        Me.btnX.Size = New System.Drawing.Size(27, 28)
+        Me.btnX.TabIndex = 20
+        Me.btnX.Text = "X"
+        Me.btnX.UseVisualStyleBackColor = True
         '
         'btnC
         '
@@ -303,11 +304,10 @@ Partial Class frmMain
         '
         'lblGuess
         '
-        Me.lblGuess.AutoSize = True
         Me.lblGuess.Font = New System.Drawing.Font("Microsoft YaHei", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblGuess.Location = New System.Drawing.Point(590, 218)
+        Me.lblGuess.Location = New System.Drawing.Point(490, 191)
         Me.lblGuess.Name = "lblGuess"
-        Me.lblGuess.Size = New System.Drawing.Size(67, 36)
+        Me.lblGuess.Size = New System.Drawing.Size(308, 109)
         Me.lblGuess.TabIndex = 26
         Me.lblGuess.Text = "null"
         Me.lblGuess.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -402,11 +402,21 @@ Partial Class frmMain
         Me.lblPlayer2Point.TabIndex = 35
         Me.lblPlayer2Point.Text = "Points: 100"
         '
+        'btnExit
+        '
+        Me.btnExit.Location = New System.Drawing.Point(723, 471)
+        Me.btnExit.Name = "btnExit"
+        Me.btnExit.Size = New System.Drawing.Size(75, 23)
+        Me.btnExit.TabIndex = 36
+        Me.btnExit.Text = "Exit"
+        Me.btnExit.UseVisualStyleBackColor = True
+        '
         'frmMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(834, 519)
+        Me.Controls.Add(Me.btnExit)
         Me.Controls.Add(Me.lblPlayer2Point)
         Me.Controls.Add(Me.lblPlayer1Point)
         Me.Controls.Add(Me.picLLeft)
@@ -422,7 +432,7 @@ Partial Class frmMain
         Me.Controls.Add(Me.btnB)
         Me.Controls.Add(Me.btnV)
         Me.Controls.Add(Me.btnC)
-        Me.Controls.Add(Me.X)
+        Me.Controls.Add(Me.btnX)
         Me.Controls.Add(Me.btnZ)
         Me.Controls.Add(Me.btnL)
         Me.Controls.Add(Me.btnK)
@@ -478,7 +488,7 @@ Partial Class frmMain
     Friend WithEvents btnK As Button
     Friend WithEvents btnL As Button
     Friend WithEvents btnZ As Button
-    Friend WithEvents X As Button
+    Friend WithEvents btnX As Button
     Friend WithEvents btnC As Button
     Friend WithEvents btnV As Button
     Friend WithEvents btnB As Button
@@ -494,4 +504,5 @@ Partial Class frmMain
     Friend WithEvents picLLeft As PictureBox
     Friend WithEvents lblPlayer1Point As Label
     Friend WithEvents lblPlayer2Point As Label
+    Friend WithEvents btnExit As Button
 End Class

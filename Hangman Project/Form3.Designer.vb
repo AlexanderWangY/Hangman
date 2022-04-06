@@ -68,6 +68,7 @@ Partial Class Form3
         'rdbNormal
         '
         Me.rdbNormal.AutoSize = True
+        Me.rdbNormal.Checked = True
         Me.rdbNormal.Location = New System.Drawing.Point(198, 114)
         Me.rdbNormal.Name = "rdbNormal"
         Me.rdbNormal.Size = New System.Drawing.Size(58, 17)
@@ -83,7 +84,6 @@ Partial Class Form3
         Me.rdbDouble.Name = "rdbDouble"
         Me.rdbDouble.Size = New System.Drawing.Size(59, 17)
         Me.rdbDouble.TabIndex = 5
-        Me.rdbDouble.TabStop = True
         Me.rdbDouble.Text = "Double"
         Me.rdbDouble.UseVisualStyleBackColor = True
         '

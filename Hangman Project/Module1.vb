@@ -8,6 +8,8 @@
 
     Public normal As Boolean
 
+    Public turnName As Integer
+
 
 End Module
 

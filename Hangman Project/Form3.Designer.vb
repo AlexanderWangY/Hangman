@@ -99,6 +99,7 @@ Partial Class Form3
         Me.Controls.Add(Me.txtbWord)
         Me.Controls.Add(Me.Label1)
         Me.Name = "Form3"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form3"
         Me.ResumeLayout(False)
         Me.PerformLayout()

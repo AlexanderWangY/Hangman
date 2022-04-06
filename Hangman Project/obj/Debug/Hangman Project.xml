@@ -22,5 +22,35 @@ Hangman Project
   resource lookups using this strongly typed resource class.
 </summary>
 </member>
+<member name="P:Hangman_Project.My.Resources.Resources.black_back">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Hangman_Project.My.Resources.Resources.blackcircleee">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Hangman_Project.My.Resources.Resources.hangman_pole">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Hangman_Project.My.Resources.Resources.leftleg">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Hangman_Project.My.Resources.Resources.pole">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Hangman_Project.My.Resources.Resources.rightleg">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 </members>
 </doc>

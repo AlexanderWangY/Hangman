@@ -92,6 +92,7 @@
       <DependentUpon>MainForm.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Module1.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -142,6 +143,24 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hangman pole.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pole.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blackcircleee.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\black back.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rightleg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\leftleg.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

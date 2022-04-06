@@ -12,3 +12,17 @@ C:\Users\awang1534\Documents\Hangman Project\Hangman Project\obj\Debug\Hangman P
 C:\Users\awang1534\Documents\Hangman Project\Hangman Project\obj\Debug\Hangman Project.exe
 C:\Users\awang1534\Documents\Hangman Project\Hangman Project\obj\Debug\Hangman Project.xml
 C:\Users\awang1534\Documents\Hangman Project\Hangman Project\obj\Debug\Hangman Project.pdb
+D:\Visual Basic Projects\Hangman Project\Hangman Project\bin\Debug\Hangman Project.exe.config
+D:\Visual Basic Projects\Hangman Project\Hangman Project\bin\Debug\Hangman Project.exe
+D:\Visual Basic Projects\Hangman Project\Hangman Project\bin\Debug\Hangman Project.pdb
+D:\Visual Basic Projects\Hangman Project\Hangman Project\bin\Debug\Hangman Project.xml
+D:\Visual Basic Projects\Hangman Project\Hangman Project\obj\Debug\Hangman Project.vbprojAssemblyReference.cache
+D:\Visual Basic Projects\Hangman Project\Hangman Project\obj\Debug\Hangman_Project.Form2.resources
+D:\Visual Basic Projects\Hangman Project\Hangman Project\obj\Debug\Hangman_Project.Form3.resources
+D:\Visual Basic Projects\Hangman Project\Hangman Project\obj\Debug\Hangman_Project.frmMain.resources
+D:\Visual Basic Projects\Hangman Project\Hangman Project\obj\Debug\Hangman_Project.Resources.resources
+D:\Visual Basic Projects\Hangman Project\Hangman Project\obj\Debug\Hangman Project.vbproj.GenerateResource.cache
+D:\Visual Basic Projects\Hangman Project\Hangman Project\obj\Debug\Hangman Project.vbproj.CoreCompileInputs.cache
+D:\Visual Basic Projects\Hangman Project\Hangman Project\obj\Debug\Hangman Project.exe
+D:\Visual Basic Projects\Hangman Project\Hangman Project\obj\Debug\Hangman Project.xml
+D:\Visual Basic Projects\Hangman Project\Hangman Project\obj\Debug\Hangman Project.pdb

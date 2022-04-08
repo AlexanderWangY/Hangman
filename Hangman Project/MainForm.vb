@@ -1,7 +1,6 @@
 ﻿Public Class frmMain
-
-    Dim array As ArrayList(Of Char) = {"!"}
-    Private Sub frmMain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    Dim bodypart As Integer
+    Public Sub frmMain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         picBody.Hide()
         picHead.Hide()
         picLeft.Hide()
@@ -9,6 +8,8 @@
         picRight.Hide()
         picRLeg.Hide()
         Form3.Hide()
+
+        bodypart = 0
 
         lblGuess.Text = String.Empty
 
@@ -30,27 +31,60 @@
         Me.Close()
     End Sub
 
-    Private Sub btn_Click(sender As Object, e As EventArgs) Handles btnA.Click, btnB.Click, btnC.Click,
+    Public Sub btn_Click(sender As Object, e As EventArgs) Handles btnA.Click, btnB.Click, btnC.Click,
         btnD.Click, btnE.Click, btnF.Click, btnG.Click, btnH.Click, btnI.Click, btnJ.Click, btnK.Click,
         btnL.Click, btnM.Click, btnN.Click, btnO.Click, btnP.Click,
         btnQ.Click, btnR.Click, btnS.Click, btnT.Click, btnU.Click, btnV.Click, btnW.Click, btnX.Click, btnY.Click, btnZ.Click
 
 
         Dim btn As Button = CType(sender, Button)
-        lblGuess.Text = String.Empty
+        Dim letter As Char = btn.Text
+        Dim count As Integer = 0
+        If Module1.guessWord.Contains(letter) Then
+            MsgBox("FOUND")
+            For x As Integer = 0 To Module1.guessWord.Length - 1
+                If Module1.guessWord(x) = letter Then
+                    lblGuess.Text = lblGuess.Text.Remove(x, 1)
+                    lblGuess.Text = lblGuess.Text.Insert(x, letter)
+                End If
+            Next
+            count += 1
+        End If
+        If count = 0 Then
+            bodypart += 1
+            Select Case bodypart
+                Case 1
+                    picHead.Visible = True
+                Case 2
+                    picBody.Visible = True
+                Case 3
+                    picRight.Visible = True
+                Case 4
+                    picLeft.Visible = True
+                Case 5
+                    picRLeg.Visible = True
+                Case 6
+                    picLLeft.Visible = True
+            End Select
+        End If
 
-        For Each c As Char In Module1.guessWord
 
-            If c = " " Then
-                lblGuess.Text += " "
-            ElseIf array.Contains(c.ToString) Then
-                lblGuess.Text += c
-            ElseIf c = btn.Text Then
-                lblGuess.Text += btn.Text
-            Else
-                lblGuess.Text += "-"
+        Dim checkFinish As Integer = 0
+        For Each c As Char In lblGuess.Text
+            If c = "-" Then
+                checkFinish += 1
             End If
         Next
-        array.Add(btn.Text)
+
+        If checkFinish = 0 Then
+            If Module1.turnName = 0 Then
+                MsgBox(Module1.playerOne + " won!")
+            Else
+                MsgBox(Module1.playerTwo + " won!")
+            End If
+        End If
+
+        btn.Enabled = False
+
     End Sub
 End Class

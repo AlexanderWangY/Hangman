@@ -1,4 +1,8 @@
-﻿Public Class Form3
+﻿Option Explicit On
+Option Infer Off
+Option Strict On
+
+Public Class Form3
 
     Private Sub btnSubmit_Click(sender As Object, e As EventArgs) Handles btnSubmit.Click
 
@@ -27,9 +31,11 @@
 
         If (Module1.turnName = 0) Then
             lblTurn.Text = Module1.playerOne + "'s turn to choose a word"
+            lblLookAway.Text = Module1.playerTwo + ", LOOK AWAy!"
             Module1.turnName += 1
         ElseIf (Module1.turnName = 1) Then
-            lblTurn.Text = Module1.playerTwo + "'s turn to choose a word"
+            lblTurn.Text = Module1.playerTwo + "'ss turn to choose a word"
+            lblLookAway.Text = Module1.playerOne + ", LOOK AWAy!"
             Module1.turnName -= 1
         End If
     End Sub

@@ -33,40 +33,42 @@ Partial Class Form2
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(93, 96)
+        Me.Label1.Location = New System.Drawing.Point(140, 73)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(48, 13)
+        Me.Label1.Size = New System.Drawing.Size(86, 13)
         Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Player 1:"
+        Me.Label1.Text = "Player 1's Name:"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(93, 125)
+        Me.Label2.Location = New System.Drawing.Point(140, 112)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(48, 13)
+        Me.Label2.Size = New System.Drawing.Size(86, 13)
         Me.Label2.TabIndex = 1
-        Me.Label2.Text = "Player 2:"
+        Me.Label2.Text = "Player 2's Name:"
         '
         'txtbPlayer1
         '
-        Me.txtbPlayer1.Location = New System.Drawing.Point(147, 93)
+        Me.txtbPlayer1.Location = New System.Drawing.Point(84, 89)
         Me.txtbPlayer1.Name = "txtbPlayer1"
-        Me.txtbPlayer1.Size = New System.Drawing.Size(100, 20)
+        Me.txtbPlayer1.Size = New System.Drawing.Size(195, 20)
         Me.txtbPlayer1.TabIndex = 2
+        Me.txtbPlayer1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'txtbPlayer2
         '
-        Me.txtbPlayer2.Location = New System.Drawing.Point(147, 125)
+        Me.txtbPlayer2.Location = New System.Drawing.Point(84, 128)
         Me.txtbPlayer2.Name = "txtbPlayer2"
-        Me.txtbPlayer2.Size = New System.Drawing.Size(100, 20)
+        Me.txtbPlayer2.Size = New System.Drawing.Size(195, 20)
         Me.txtbPlayer2.TabIndex = 3
+        Me.txtbPlayer2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label3
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft YaHei UI", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(91, 28)
+        Me.Label3.Location = New System.Drawing.Point(96, 25)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(168, 26)
         Me.Label3.TabIndex = 4
@@ -74,7 +76,7 @@ Partial Class Form2
         '
         'btnLetsGo
         '
-        Me.btnLetsGo.Location = New System.Drawing.Point(137, 163)
+        Me.btnLetsGo.Location = New System.Drawing.Point(146, 163)
         Me.btnLetsGo.Name = "btnLetsGo"
         Me.btnLetsGo.Size = New System.Drawing.Size(75, 23)
         Me.btnLetsGo.TabIndex = 5

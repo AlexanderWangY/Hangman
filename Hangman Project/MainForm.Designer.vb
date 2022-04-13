@@ -58,7 +58,8 @@ Partial Class frmMain
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.lblPlayer1Point = New System.Windows.Forms.Label()
         Me.lblPlayer2Point = New System.Windows.Forms.Label()
-        Me.btnExit = New System.Windows.Forms.Button()
+        Me.btnNext = New System.Windows.Forms.Button()
+        Me.btnVeto = New System.Windows.Forms.Button()
         CType(Me.picLLeft, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picRLeg, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picLeft, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -385,36 +386,46 @@ Partial Class frmMain
         'lblPlayer1Point
         '
         Me.lblPlayer1Point.Font = New System.Drawing.Font("Microsoft YaHei", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPlayer1Point.Location = New System.Drawing.Point(579, 377)
+        Me.lblPlayer1Point.Location = New System.Drawing.Point(471, 378)
         Me.lblPlayer1Point.Name = "lblPlayer1Point"
-        Me.lblPlayer1Point.Size = New System.Drawing.Size(165, 23)
+        Me.lblPlayer1Point.Size = New System.Drawing.Size(327, 23)
         Me.lblPlayer1Point.TabIndex = 34
         Me.lblPlayer1Point.Text = "Points: "
         '
         'lblPlayer2Point
         '
         Me.lblPlayer2Point.Font = New System.Drawing.Font("Microsoft YaHei", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPlayer2Point.Location = New System.Drawing.Point(579, 407)
+        Me.lblPlayer2Point.Location = New System.Drawing.Point(471, 401)
         Me.lblPlayer2Point.Name = "lblPlayer2Point"
-        Me.lblPlayer2Point.Size = New System.Drawing.Size(163, 21)
+        Me.lblPlayer2Point.Size = New System.Drawing.Size(327, 21)
         Me.lblPlayer2Point.TabIndex = 35
         Me.lblPlayer2Point.Text = "Points:"
         '
-        'btnExit
+        'btnNext
         '
-        Me.btnExit.Location = New System.Drawing.Point(723, 471)
-        Me.btnExit.Name = "btnExit"
-        Me.btnExit.Size = New System.Drawing.Size(75, 23)
-        Me.btnExit.TabIndex = 36
-        Me.btnExit.Text = "Exit"
-        Me.btnExit.UseVisualStyleBackColor = True
+        Me.btnNext.Location = New System.Drawing.Point(738, 480)
+        Me.btnNext.Name = "btnNext"
+        Me.btnNext.Size = New System.Drawing.Size(75, 23)
+        Me.btnNext.TabIndex = 36
+        Me.btnNext.Text = "Next"
+        Me.btnNext.UseVisualStyleBackColor = True
+        '
+        'btnVeto
+        '
+        Me.btnVeto.Location = New System.Drawing.Point(614, 480)
+        Me.btnVeto.Name = "btnVeto"
+        Me.btnVeto.Size = New System.Drawing.Size(75, 23)
+        Me.btnVeto.TabIndex = 37
+        Me.btnVeto.Text = "Veto"
+        Me.btnVeto.UseVisualStyleBackColor = True
         '
         'frmMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(834, 519)
-        Me.Controls.Add(Me.btnExit)
+        Me.Controls.Add(Me.btnVeto)
+        Me.Controls.Add(Me.btnNext)
         Me.Controls.Add(Me.lblPlayer2Point)
         Me.Controls.Add(Me.lblPlayer1Point)
         Me.Controls.Add(Me.picLLeft)
@@ -501,5 +512,6 @@ Partial Class frmMain
     Friend WithEvents picLLeft As PictureBox
     Friend WithEvents lblPlayer1Point As Label
     Friend WithEvents lblPlayer2Point As Label
-    Friend WithEvents btnExit As Button
+    Friend WithEvents btnNext As Button
+    Friend WithEvents btnVeto As Button
 End Class

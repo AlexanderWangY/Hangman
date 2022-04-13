@@ -28,12 +28,13 @@ Partial Class Form3
         Me.btnSubmit = New System.Windows.Forms.Button()
         Me.rdbNormal = New System.Windows.Forms.RadioButton()
         Me.rdbDouble = New System.Windows.Forms.RadioButton()
+        Me.lblLookAway = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(106, 99)
+        Me.Label1.Location = New System.Drawing.Point(106, 113)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(81, 13)
         Me.Label1.TabIndex = 0
@@ -41,7 +42,7 @@ Partial Class Form3
         '
         'txtbWord
         '
-        Me.txtbWord.Location = New System.Drawing.Point(184, 96)
+        Me.txtbWord.Location = New System.Drawing.Point(184, 110)
         Me.txtbWord.Name = "txtbWord"
         Me.txtbWord.Size = New System.Drawing.Size(259, 20)
         Me.txtbWord.TabIndex = 1
@@ -87,11 +88,22 @@ Partial Class Form3
         Me.rdbDouble.Text = "Double"
         Me.rdbDouble.UseVisualStyleBackColor = True
         '
+        'lblLookAway
+        '
+        Me.lblLookAway.AutoSize = True
+        Me.lblLookAway.Location = New System.Drawing.Point(235, 94)
+        Me.lblLookAway.Name = "lblLookAway"
+        Me.lblLookAway.Size = New System.Drawing.Size(71, 13)
+        Me.lblLookAway.TabIndex = 6
+        Me.lblLookAway.Text = "LOOK AWAY"
+        Me.lblLookAway.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
         'Form3
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(543, 231)
+        Me.Controls.Add(Me.lblLookAway)
         Me.Controls.Add(Me.rdbDouble)
         Me.Controls.Add(Me.rdbNormal)
         Me.Controls.Add(Me.btnSubmit)
@@ -112,4 +124,5 @@ Partial Class Form3
     Friend WithEvents btnSubmit As Button
     Friend WithEvents rdbNormal As RadioButton
     Friend WithEvents rdbDouble As RadioButton
+    Friend WithEvents lblLookAway As Label
 End Class

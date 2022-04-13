@@ -9,6 +9,13 @@
         picRLeg.Hide()
         Form3.Hide()
 
+        lblPlayer1Point.Text = Module1.playerOne + "'s points: " + Module1.scoreOne.ToString
+        lblPlayer2Point.Text = Module1.playerTwo + "'s points: " + Module1.scoreTwo.ToString
+
+        If Module1.normal = False Then
+            Module1.guessWordPoints *= 2
+        End If
+
         bodypart = 0
 
         lblGuess.Text = String.Empty
@@ -21,9 +28,6 @@
                 lblGuess.Text += "-"
             End If
         Next
-    End Sub
-
-    Private Sub frmMain_Shown(sender As Object, e As EventArgs) Handles Me.Shown
     End Sub
 
     Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
@@ -41,7 +45,6 @@
         Dim letter As Char = btn.Text
         Dim count As Integer = 0
         If Module1.guessWord.Contains(letter) Then
-            MsgBox("FOUND")
             For x As Integer = 0 To Module1.guessWord.Length - 1
                 If Module1.guessWord(x) = letter Then
                     lblGuess.Text = lblGuess.Text.Remove(x, 1)
@@ -52,20 +55,30 @@
         End If
         If count = 0 Then
             bodypart += 1
-            Select Case bodypart
-                Case 1
-                    picHead.Visible = True
-                Case 2
-                    picBody.Visible = True
-                Case 3
-                    picRight.Visible = True
-                Case 4
-                    picLeft.Visible = True
-                Case 5
-                    picRLeg.Visible = True
-                Case 6
-                    picLLeft.Visible = True
-            End Select
+            If bodypart = 1 Then
+                picHead.Show()
+            ElseIf bodypart = 2 Then
+                picBody.Show()
+            ElseIf bodypart = 3 Then
+                picRight.Show()
+            ElseIf bodypart = 4 Then
+                picLeft.Show()
+            ElseIf bodypart = 5 Then
+                picRLeg.Show()
+            ElseIf bodypart = 6 Then
+                picLLeft.Show()
+                If Module1.turnName = 0 Then
+                    Module1.scoreTwo += Module1.guessWordPoints
+                    lblPlayer1Point.Text = Module1.playerOne + "'s points: " + Module1.scoreOne.ToString
+                    lblPlayer2Point.Text = Module1.playerTwo + "'s points: " + Module1.scoreTwo.ToString
+                    MsgBox(Module1.playerOne + " lost the round!")
+                Else
+                    Module1.scoreOne += Module1.guessWordPoints
+                    lblPlayer1Point.Text = Module1.playerOne + "'s points: " + Module1.scoreOne.ToString
+                    lblPlayer2Point.Text = Module1.playerTwo + "'s points: " + Module1.scoreTwo.ToString
+                    MsgBox(Module1.playerTwo + " lost the round!")
+                End If
+            End If
         End If
 
 
@@ -78,10 +91,19 @@
 
         If checkFinish = 0 Then
             If Module1.turnName = 0 Then
-                MsgBox(Module1.playerOne + " won!")
+                Module1.scoreOne += Module1.guessWordPoints
+                lblPlayer1Point.Text = Module1.playerOne + "'s points: " + Module1.scoreOne.ToString
+                lblPlayer2Point.Text = Module1.playerTwo + "'s points: " + Module1.scoreTwo.ToString
+                MsgBox(Module1.playerOne + " won the round!")
             Else
-                MsgBox(Module1.playerTwo + " won!")
+                Module1.scoreTwo += Module1.guessWordPoints
+                lblPlayer1Point.Text = Module1.playerOne + "'s points: " + Module1.scoreOne.ToString
+                lblPlayer2Point.Text = Module1.playerTwo + "'s points: " + Module1.scoreTwo.ToString
+                MsgBox(Module1.playerTwo + " won the round!")
             End If
+
+            Form3.Show()
+            Me.Close()
         End If
 
         btn.Enabled = False

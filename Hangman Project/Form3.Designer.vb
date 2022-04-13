@@ -33,7 +33,7 @@ Partial Class Form3
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(88, 77)
+        Me.Label1.Location = New System.Drawing.Point(106, 99)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(81, 13)
         Me.Label1.TabIndex = 0
@@ -41,24 +41,24 @@ Partial Class Form3
         '
         'txtbWord
         '
-        Me.txtbWord.Location = New System.Drawing.Point(166, 74)
+        Me.txtbWord.Location = New System.Drawing.Point(184, 96)
         Me.txtbWord.Name = "txtbWord"
         Me.txtbWord.Size = New System.Drawing.Size(259, 20)
         Me.txtbWord.TabIndex = 1
         '
         'lblTurn
         '
-        Me.lblTurn.AutoSize = True
         Me.lblTurn.Font = New System.Drawing.Font("Microsoft YaHei", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblTurn.Location = New System.Drawing.Point(210, 9)
+        Me.lblTurn.Location = New System.Drawing.Point(12, 9)
         Me.lblTurn.Name = "lblTurn"
-        Me.lblTurn.Size = New System.Drawing.Size(111, 28)
+        Me.lblTurn.Size = New System.Drawing.Size(518, 73)
         Me.lblTurn.TabIndex = 2
         Me.lblTurn.Text = "___'s Turn"
+        Me.lblTurn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'btnSubmit
         '
-        Me.btnSubmit.Location = New System.Drawing.Point(220, 158)
+        Me.btnSubmit.Location = New System.Drawing.Point(238, 180)
         Me.btnSubmit.Name = "btnSubmit"
         Me.btnSubmit.Size = New System.Drawing.Size(75, 23)
         Me.btnSubmit.TabIndex = 3
@@ -69,7 +69,7 @@ Partial Class Form3
         '
         Me.rdbNormal.AutoSize = True
         Me.rdbNormal.Checked = True
-        Me.rdbNormal.Location = New System.Drawing.Point(198, 114)
+        Me.rdbNormal.Location = New System.Drawing.Point(216, 136)
         Me.rdbNormal.Name = "rdbNormal"
         Me.rdbNormal.Size = New System.Drawing.Size(58, 17)
         Me.rdbNormal.TabIndex = 4
@@ -80,7 +80,7 @@ Partial Class Form3
         'rdbDouble
         '
         Me.rdbDouble.AutoSize = True
-        Me.rdbDouble.Location = New System.Drawing.Point(262, 114)
+        Me.rdbDouble.Location = New System.Drawing.Point(280, 136)
         Me.rdbDouble.Name = "rdbDouble"
         Me.rdbDouble.Size = New System.Drawing.Size(59, 17)
         Me.rdbDouble.TabIndex = 5
@@ -91,7 +91,7 @@ Partial Class Form3
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(512, 214)
+        Me.ClientSize = New System.Drawing.Size(543, 231)
         Me.Controls.Add(Me.rdbDouble)
         Me.Controls.Add(Me.rdbNormal)
         Me.Controls.Add(Me.btnSubmit)

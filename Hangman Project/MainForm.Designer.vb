@@ -384,23 +384,21 @@ Partial Class frmMain
         '
         'lblPlayer1Point
         '
-        Me.lblPlayer1Point.AutoSize = True
         Me.lblPlayer1Point.Font = New System.Drawing.Font("Microsoft YaHei", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblPlayer1Point.Location = New System.Drawing.Point(579, 377)
         Me.lblPlayer1Point.Name = "lblPlayer1Point"
-        Me.lblPlayer1Point.Size = New System.Drawing.Size(91, 19)
+        Me.lblPlayer1Point.Size = New System.Drawing.Size(165, 23)
         Me.lblPlayer1Point.TabIndex = 34
-        Me.lblPlayer1Point.Text = "Points: 100"
+        Me.lblPlayer1Point.Text = "Points: "
         '
         'lblPlayer2Point
         '
-        Me.lblPlayer2Point.AutoSize = True
         Me.lblPlayer2Point.Font = New System.Drawing.Font("Microsoft YaHei", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPlayer2Point.Location = New System.Drawing.Point(579, 396)
+        Me.lblPlayer2Point.Location = New System.Drawing.Point(579, 407)
         Me.lblPlayer2Point.Name = "lblPlayer2Point"
-        Me.lblPlayer2Point.Size = New System.Drawing.Size(91, 19)
+        Me.lblPlayer2Point.Size = New System.Drawing.Size(163, 21)
         Me.lblPlayer2Point.TabIndex = 35
-        Me.lblPlayer2Point.Text = "Points: 100"
+        Me.lblPlayer2Point.Text = "Points:"
         '
         'btnExit
         '
@@ -464,7 +462,6 @@ Partial Class frmMain
         CType(Me.picHead, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
 

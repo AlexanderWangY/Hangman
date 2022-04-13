@@ -1,18 +1,19 @@
 ﻿Module Module1
+    ' Names
     Public playerOne, playerTwo As String
 
-    Public turnNumber As Integer = 0
+    ' Checks whos turn it is
+    Public turnName As Integer
 
-    Public word As ArrayList = New ArrayList(Of String)
+    ' The word players are trying to guess and how much it is worth
     Public guessWord As String
+    Public guessWordPoints As Integer
 
+    ' Checks if normal round or double
     Public normal As Boolean
 
-    Public turnName As Integer
+    ' Scores
+    Public scoreOne, scoreTwo As Integer
 
 
 End Module
-
-Friend Class ArrayList(Of T)
-    Inherits ArrayList
-End Class
